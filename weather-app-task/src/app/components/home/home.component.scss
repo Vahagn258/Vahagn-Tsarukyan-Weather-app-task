@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+
+    .weather-diagnose {
+        cursor: pointer;
+        width: 150px;
+        opacity: 0.8;
+        transition: all 0.5s;
+
+        &:hover {
+            opacity: 1;
+            margin: 0 10px;
+        }
+
+        .day {
+            margin: 0 25px;
+        }
+
+        .temps {
+            display: flex;
+            flex-direction: row;
+            
+            .max-temp {
+                margin-left: 40px;
+                margin-right: 15px;
+                font-size: 17px;
+            }
+
+            .min-temp {
+                color: grey;
+            }
+        }
+    }
+}
+
+.selectedTab {
+    opacity: 1 !important;
+}
